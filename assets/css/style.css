@@ -11,7 +11,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     max-width: 760px;
-    max-height: 360px;
+    max-height: 480px;
     clear: both;
     border: solid 5px #000;
 }
@@ -19,4 +19,15 @@ body{
 img{
     height:80px;
     width: 80px;
+}
+
+.answer-button{
+    background-color: #4CAF50;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
