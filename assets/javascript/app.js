@@ -9,27 +9,32 @@ var questions = [{
     question: "Which princess has a friend named Sebastian?",
     answers: ["Aurora", "Fiona", "Ariel", "Merinda"],
     correctAnswer: "Ariel",
-    image:"assets/images/Ariel.jpg"
+    image:"assets/images/Ariel.png",
+    gif:"assets/images/sparkles.gif"
   }, {
     question: "Which princess almost married an arrogant hunter?",
     answers: ["Pocahontas", "Rapunzel", "Mulan", "Belle"],
     correctAnswer: "Belle",
-    image:"assets/images/Belle.jpg"
+    image:"assets/images/Belle.png",
+    gif:"assets/images/sparkles.gif"
   }, {
     question: "Which princess got poisoned by an apple?",
     answers: ["Belle", "Anna", "Snow White","Anastasia"],
     correctAnswer: "Snow White",
-    image:"assets/images/SnowWhite.jpg"
+    image:"assets/images/SnowWhite.jpg",
+    gif:"assets/images/sparkles.gif"
   }, {
     question: 'Which princess had a tiger as pet?',
     answers: ["Tiana", "Moana", "Jasmine", "Kida"],
     correctAnswer: "Jasmine",
-    image:"assets/images/Jasmine.jpg"
+    image:"assets/images/Jasmine.png",
+    gif:"assets/images/sparkles.gif"
   }, {
     question: 'On which princess did they cast a voodoo spell?',
     answers: ["Elsa", "Rapunzel", "Mulan", "Tiana"],
     correctAnswer: "Tiana",
-    image:"assets/images/Tiana.jpg"
+    image:"assets/images/Tiana.png",
+    gif:"assets/images/sparkles.gif"
   }];
 
 //Click Events
@@ -109,7 +114,7 @@ var game = {
         panel.append('<h3>Correct Answers: ' + game.correct + '</h3>');
         panel.append('<h3>Incorrect Answers: ' + game.incorrect + '</h3>');
         panel.append('<h3>Unanswered: ' + (questions.length - (game.incorrect + game.correct)) + '</h3>');
-        panel.append('<br><button id="start-over">Try Again?</button>');
+        panel.append('<br><button id="start-over">Try Again</button>');
       },
       clicked: function(e) {
         clearInterval(timer);
