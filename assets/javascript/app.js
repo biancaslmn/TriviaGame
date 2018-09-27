@@ -132,6 +132,7 @@ var game = {
       panel.html('<h2>Nope!</h2>');
       panel.append('<h3>The Correct Answer was: ' + questions[game.currentQuestion].correctAnswer + '</h3>');
       panel.append('<img src="' + questions[game.currentQuestion].image + '" />');
+    
   
       if (game.currentQuestion === questions.length - 1){
         setTimeout(game.results, 3 * 1000);
@@ -143,7 +144,13 @@ var game = {
       clearInterval(timer);
       game.correct++;
       panel.html('<h2>Correct!</h2>');
-      panel.append('<img src="' + questions[game.currentQuestion].image + '" />');
+      var imgWrap = $('<div class="img-wrap">');
+      imgWrap.append('<img src="' + questions[game.currentQuestion].image + '" />');
+      imgWrap.append('<img class="gif" src="' + questions[game.currentQuestion].gif + '" />');
+      panel.append(imgWrap);
+
+
+      debugger;
   
       if (game.currentQuestion === questions.length - 1){
         setTimeout(game.results, 3 * 1000);

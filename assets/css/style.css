@@ -36,3 +36,14 @@ h3{
 font-size: 16px;
 }
 
+.gif{
+    height:100px;
+    width: 100px;
+    right: 70px;
+}
+
+.img-wrap {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+}
